@@ -5,7 +5,7 @@ const todoSchema = mongoose.Schema({
     userId : {type:String,required:true},
     taskName : {type:String,required:true},
     tag: {type:String,required:true},
-    status : {type:String,default:"Pending"},
+    status : {type:Boolean,default:false},
 })
 
 const TodoModel = mongoose.model("todo",todoSchema)
